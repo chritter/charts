@@ -5,31 +5,29 @@ on:
       - master
 
 jobs:
-  publishHelmChart:
-    name: Helm gh-pages
+  release:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
+      - name: Checkout
+        uses: actions/checkout@v2
 
-    - name: git actions
-      run: |
-        git fetch --no-tags --prune --depth=1 origin +refs/heads/*:refs/remotes/origin/*
+      - name: Fetch history
+        run: git fetch --prune --unshallow
 
-    # - name: Helm linting
-    #   run: |
-    #     ./test/lint.sh
+      - name: Configure Git
+        run: |
+          git config user.name "$GITHUB_ACTOR"
+          git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
+      - name: Set up Helm
+        uses: azure/setup-helm@v1
+        with:
+          version: v3.6.2
 
-
-    - name: Add dependency chart repos
-      run: |
-        helm repo add grafana https://grafana.github.io/helm-charts
-        helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
-
-    - name: Helm gh-pages
-      uses: statcan/actions/helm-ghpages@master
-      with:
-        args: "stable/* https://chritter.github.io/charts"
-      env:
-        ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-        GIT_SSH_COMMAND: "ssh -o StrictHostKeyChecking=no"
-        SCRIPT_MODE: true
+      - name: Add dependency chart repos
+        run: |
+          helm repo add grafana https://grafana.github.io/helm-charts
+          helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+      - name: Run chart-releaser
+        uses: helm/chart-releaser-action@v1.2.1
+        env:
+          CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
