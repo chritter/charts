@@ -1,6 +1,0 @@
-dependencies:
-- name: prometheus-operator
-  repository: https://charts.helm.sh/stable
-  version: 9.3.1
-digest: sha256:ff579da590d828cbda6bf4b0ee1997db84674359dc29810fa4dde8473a1fa952
-generated: "2020-12-31T13:23:03.85053-05:00"

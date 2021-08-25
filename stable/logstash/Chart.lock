@@ -1,6 +1,0 @@
-dependencies:
-- name: logstash
-  repository: https://charts.helm.sh/stable
-  version: 2.1.0
-digest: sha256:e2184e285f27a4ecad8737a4ed661e1a553c7465a9ca7aca164e6c8b48c0c009
-generated: "2020-12-31T12:36:13.110532-05:00"
