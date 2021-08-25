@@ -19,6 +19,12 @@ jobs:
     #   run: |
     #     ./test/lint.sh
 
+
+    - name: Add dependency chart repos
+      run: |
+        helm repo add grafana https://grafana.github.io/helm-charts
+        helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+
     - name: Helm gh-pages
       uses: statcan/actions/helm-ghpages@master
       with:
