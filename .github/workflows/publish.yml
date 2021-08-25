@@ -22,7 +22,7 @@ jobs:
     - name: Helm gh-pages
       uses: statcan/actions/helm-ghpages@master
       with:
-        args: "stable/* https://blairdrummond.github.io/charts"
+        args: "stable/* https://chritter.github.io/charts"
       env:
         ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         GIT_SSH_COMMAND: "ssh -o StrictHostKeyChecking=no"
