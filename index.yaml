@@ -3,7 +3,7 @@ entries:
   grafana:
   - apiVersion: v2
     appVersion: 8.1.2
-    created: "2021-08-25T20:11:09.920678384Z"
+    created: "2021-08-27T18:58:06.662450824Z"
     description: The leading tool for querying and visualizing time series and metrics.
     digest: d445a4e2156f4187b7bc714b815da748e550d4ba6aaad9316434069b77829a7d
     home: https://grafana.net
@@ -37,7 +37,7 @@ entries:
       artifacthub.io/operator: "true"
     apiVersion: v2
     appVersion: 0.50.0
-    created: "2021-08-25T20:11:09.948309825Z"
+    created: "2021-08-27T18:58:06.688125322Z"
     dependencies:
     - condition: kubeStateMetrics.enabled
       name: kube-state-metrics
@@ -55,7 +55,7 @@ entries:
       and Prometheus rules combined with documentation and scripts to provide easy
       to operate end-to-end Kubernetes cluster monitoring with Prometheus using the
       Prometheus Operator.
-    digest: 4dc3af51174f4944607a87d4e52dcc4aa7cbe8221e2ec560882d77aec146281f
+    digest: 47510ef2755658a858a531512f6d58277ae4e2e021df4487cc4106eeca69ff2b
     home: https://github.com/prometheus-operator/kube-prometheus
     icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
     keywords:
@@ -85,7 +85,7 @@ entries:
   kube-state-metrics:
   - apiVersion: v2
     appVersion: 2.2.0
-    created: "2021-08-25T20:11:09.949494509Z"
+    created: "2021-08-27T18:58:06.689177534Z"
     description: Install kube-state-metrics to generate and expose cluster-level metrics
     digest: 2aca0ce6be89db4e86d3821c0419efd29bd1ceba91c36aa6654f45aee74ebaca
     home: https://github.com/kubernetes/kube-state-metrics/
@@ -109,7 +109,7 @@ entries:
   prometheus-node-exporter:
   - apiVersion: v2
     appVersion: 1.2.2
-    created: "2021-08-25T20:11:09.950544596Z"
+    created: "2021-08-27T18:58:06.690077544Z"
     description: A Helm chart for prometheus node-exporter
     digest: d4674d89c4eae1e9b3d52931a66875150ea25d3bac320a0fa69b9f1b5c4fc480
     home: https://github.com/prometheus/node_exporter/
@@ -132,7 +132,7 @@ entries:
   seldon-core-analytics:
   - apiVersion: v2
     appVersion: 1.11.0-dev
-    created: "2021-08-25T20:11:09.961472354Z"
+    created: "2021-08-27T18:58:06.699580555Z"
     dependencies:
     - condition: grafana.enabled
       name: grafana
@@ -145,7 +145,7 @@ entries:
     description: 'Prometheus and Grafana installation with a basic Grafana dashboard
       showing the default Prometheus metrics exposed by Seldon for each inference
       graph deployed. '
-    digest: 09d549671f03e2d1234ea4cbd2693c78d380b62c92a3df6afe1c05f4e81e0aee
+    digest: 3efe937551084d6b6589d96dc0b0c17b78d961fd66c001aa414f19e7f3440139
     home: https://github.com/SeldonIO/seldon-core
     keywords:
     - seldon-core
@@ -160,4 +160,4 @@ entries:
     urls:
     - https://chritter.github.io/charts/seldon-core-analytics-1.11.0-dev.tgz
     version: 1.11.0-dev
-generated: "2021-08-25T20:11:09.917706623Z"
+generated: "2021-08-27T18:58:06.659457989Z"
