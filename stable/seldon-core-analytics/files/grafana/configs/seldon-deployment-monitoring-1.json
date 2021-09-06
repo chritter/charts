@@ -15,8 +15,7 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "id": 5,
-  "iteration": 1630852889491,
+  "iteration": 1630891430549,
   "links": [],
   "panels": [
     {
@@ -434,8 +433,8 @@
       "scopedVars": {
         "deployment": {
           "selected": true,
-          "text": "rest-seldon",
-          "value": "rest-seldon"
+          "text": "iris-model-custom-meta",
+          "value": "iris-model-custom-meta"
         }
       },
       "title": "Deployment Counts $deployment",
@@ -502,8 +501,8 @@
       "scopedVars": {
         "deployment": {
           "selected": true,
-          "text": "rest-seldon",
-          "value": "rest-seldon"
+          "text": "iris-model-custom-meta",
+          "value": "iris-model-custom-meta"
         }
       },
       "sparkline": {
@@ -598,8 +597,8 @@
       "scopedVars": {
         "deployment": {
           "selected": true,
-          "text": "rest-seldon",
-          "value": "rest-seldon"
+          "text": "iris-model-custom-meta",
+          "value": "iris-model-custom-meta"
         }
       },
       "sparkline": {
@@ -692,8 +691,8 @@
       "scopedVars": {
         "deployment": {
           "selected": true,
-          "text": "rest-seldon",
-          "value": "rest-seldon"
+          "text": "iris-model-custom-meta",
+          "value": "iris-model-custom-meta"
         }
       },
       "sparkline": {
@@ -786,8 +785,8 @@
       "scopedVars": {
         "deployment": {
           "selected": true,
-          "text": "rest-seldon",
-          "value": "rest-seldon"
+          "text": "iris-model-custom-meta",
+          "value": "iris-model-custom-meta"
         }
       },
       "sparkline": {
@@ -827,7 +826,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 12
+        "y": 24
       },
       "id": 43,
       "panels": [],
@@ -849,7 +848,7 @@
         "h": 3,
         "w": 24,
         "x": 0,
-        "y": 13
+        "y": 25
       },
       "id": 8,
       "links": [],
@@ -866,7 +865,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 16
+        "y": 28
       },
       "id": 44,
       "panels": [],
@@ -874,8 +873,8 @@
       "scopedVars": {
         "model_image": {
           "selected": false,
-          "text": "seldonio/mock_classifier",
-          "value": "seldonio/mock_classifier"
+          "text": "chritter/sklearn_iris2",
+          "value": "chritter/sklearn_iris2"
         }
       },
       "title": "Model Metrics $model_image",
@@ -899,7 +898,7 @@
         "h": 9,
         "w": 8,
         "x": 0,
-        "y": 17
+        "y": 29
       },
       "hiddenSeries": false,
       "id": 7,
@@ -926,8 +925,8 @@
       "scopedVars": {
         "model_image": {
           "selected": false,
-          "text": "seldonio/mock_classifier",
-          "value": "seldonio/mock_classifier"
+          "text": "chritter/sklearn_iris2",
+          "value": "chritter/sklearn_iris2"
         }
       },
       "seriesOverrides": [],
@@ -967,7 +966,8 @@
       },
       "yaxes": [
         {
-          "format": "short",
+          "$$hashKey": "object:579",
+          "format": "reqps",
           "label": null,
           "logBase": 1,
           "max": null,
@@ -975,7 +975,8 @@
           "show": true
         },
         {
-          "format": "short",
+          "$$hashKey": "object:580",
+          "format": "pps",
           "label": null,
           "logBase": 1,
           "max": null,
@@ -1006,7 +1007,7 @@
         "h": 9,
         "w": 8,
         "x": 8,
-        "y": 17
+        "y": 29
       },
       "hiddenSeries": false,
       "id": 11,
@@ -1034,8 +1035,8 @@
       "scopedVars": {
         "model_image": {
           "selected": false,
-          "text": "seldonio/mock_classifier",
-          "value": "seldonio/mock_classifier"
+          "text": "chritter/sklearn_iris2",
+          "value": "chritter/sklearn_iris2"
         }
       },
       "seriesOverrides": [],
@@ -1119,7 +1120,8 @@
       },
       "yaxes": [
         {
-          "format": "short",
+          "$$hashKey": "object:427",
+          "format": "s",
           "label": null,
           "logBase": 1,
           "max": null,
@@ -1127,6 +1129,7 @@
           "show": true
         },
         {
+          "$$hashKey": "object:428",
           "format": "short",
           "label": null,
           "logBase": 1,
@@ -1179,7 +1182,7 @@
         "h": 5,
         "w": 10,
         "x": 0,
-        "y": 26
+        "y": 38
       },
       "hiddenSeries": false,
       "id": 46,
@@ -1206,8 +1209,8 @@
       "scopedVars": {
         "model_image": {
           "selected": false,
-          "text": "seldonio/mock_classifier",
-          "value": "seldonio/mock_classifier"
+          "text": "chritter/sklearn_iris2",
+          "value": "chritter/sklearn_iris2"
         }
       },
       "seriesOverrides": [],
@@ -1242,7 +1245,8 @@
       },
       "yaxes": [
         {
-          "format": "short",
+          "$$hashKey": "object:350",
+          "format": "none",
           "label": "cores",
           "logBase": 1,
           "max": null,
@@ -1250,6 +1254,7 @@
           "show": true
         },
         {
+          "$$hashKey": "object:351",
           "format": "short",
           "label": null,
           "logBase": 1,
@@ -1302,7 +1307,7 @@
         "h": 5,
         "w": 13,
         "x": 10,
-        "y": 26
+        "y": 38
       },
       "hiddenSeries": false,
       "id": 47,
@@ -1326,6 +1331,13 @@
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
+      "scopedVars": {
+        "model_image": {
+          "selected": false,
+          "text": "chritter/sklearn_iris2",
+          "value": "chritter/sklearn_iris2"
+        }
+      },
       "seriesOverrides": [],
       "spaceLength": 10,
       "stack": false,
@@ -1358,14 +1370,16 @@
       },
       "yaxes": [
         {
-          "format": "short",
-          "label": "cores",
+          "$$hashKey": "object:272",
+          "format": "decbytes",
+          "label": "Memory",
           "logBase": 1,
           "max": null,
           "min": null,
           "show": true
         },
         {
+          "$$hashKey": "object:273",
           "format": "short",
           "label": null,
           "logBase": 1,
@@ -1393,9 +1407,9 @@
         "current": {
           "selected": true,
           "tags": [],
-          "text": "rest-seldon",
+          "text": "iris-model-custom-meta",
           "value": [
-            "rest-seldon"
+            "iris-model-custom-meta"
           ]
         },
         "datasource": "prometheus",
@@ -1420,12 +1434,9 @@
       {
         "allValue": ".*",
         "current": {
-          "selected": true,
-          "tags": [],
-          "text": "model",
-          "value": [
-            "model"
-          ]
+          "selected": false,
+          "text": "All",
+          "value": "$__all"
         },
         "datasource": "prometheus",
         "definition": "label_values(seldon_api_executor_client_requests_seconds_count,predictor_name)",
@@ -1450,7 +1461,6 @@
         "allValue": ".*",
         "current": {
           "selected": true,
-          "tags": [],
           "text": "All",
           "value": [
             "$__all"
@@ -1479,7 +1489,6 @@
         "allValue": ".*",
         "current": {
           "selected": true,
-          "tags": [],
           "text": "All",
           "value": [
             "$__all"
@@ -1508,7 +1517,6 @@
         "allValue": ".*",
         "current": {
           "selected": true,
-          "tags": [],
           "text": "All",
           "value": [
             "$__all"
@@ -1594,5 +1602,5 @@
   "timezone": "browser",
   "title": "Seldon Deployment Monitoring 1",
   "uid": "U1cSDzyZz211",
-  "version": 6
+  "version": 1
 }
