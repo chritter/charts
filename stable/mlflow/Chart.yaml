@@ -1,0 +1,10 @@
+apiVersion: v2
+appVersion: 1.18.0
+description: MLflow - an open source platform for the machine learning lifecycle
+maintainers:
+- email: mlops@getindata.com
+  name: getindata
+  url: https://getindata.com
+name: mlflow
+type: application
+version: 0.1.1
