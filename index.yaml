@@ -3,7 +3,7 @@ entries:
   grafana:
   - apiVersion: v2
     appVersion: 8.1.2
-    created: "2021-09-06T15:44:50.2114431Z"
+    created: "2021-09-19T12:57:32.631319082Z"
     description: The leading tool for querying and visualizing time series and metrics.
     digest: d445a4e2156f4187b7bc714b815da748e550d4ba6aaad9316434069b77829a7d
     home: https://grafana.net
@@ -37,7 +37,7 @@ entries:
       artifacthub.io/operator: "true"
     apiVersion: v2
     appVersion: 0.50.0
-    created: "2021-09-06T15:44:50.232331883Z"
+    created: "2021-09-19T12:57:32.661927858Z"
     dependencies:
     - condition: kubeStateMetrics.enabled
       name: kube-state-metrics
@@ -55,7 +55,7 @@ entries:
       and Prometheus rules combined with documentation and scripts to provide easy
       to operate end-to-end Kubernetes cluster monitoring with Prometheus using the
       Prometheus Operator.
-    digest: 9ffa72bf6ceb7f579ce4905ace9e2bde5cd154605929c98afe13b8679d15ab79
+    digest: c5817a5451a5b6d8a741e1a062299500bdecb474eab5df064b925a74339acf40
     home: https://github.com/prometheus-operator/kube-prometheus
     icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
     keywords:
@@ -85,7 +85,7 @@ entries:
   kube-state-metrics:
   - apiVersion: v2
     appVersion: 2.2.0
-    created: "2021-09-06T15:44:50.233216995Z"
+    created: "2021-09-19T12:57:32.66397363Z"
     description: Install kube-state-metrics to generate and expose cluster-level metrics
     digest: 2aca0ce6be89db4e86d3821c0419efd29bd1ceba91c36aa6654f45aee74ebaca
     home: https://github.com/kubernetes/kube-state-metrics/
@@ -106,10 +106,31 @@ entries:
     urls:
     - https://chritter.github.io/charts/kube-state-metrics-3.5.0.tgz
     version: 3.5.0
+  minio:
+  - apiVersion: v1
+    appVersion: master
+    created: "2021-09-19T12:57:32.665870404Z"
+    description: High Performance, Kubernetes Native Object Storage
+    digest: ad830117d5eb220e0a8d96244d7d32b02fa30cc2d09172a2d29b0cbd71da51a6
+    home: https://min.io
+    icon: https://min.io/resources/img/logo/MINIO_wordmark.png
+    keywords:
+    - storage
+    - object-storage
+    - S3
+    maintainers:
+    - email: dev@minio.io
+      name: MinIO, Inc
+    name: minio
+    sources:
+    - https://github.com/minio/minio
+    urls:
+    - https://chritter.github.io/charts/minio-8.0.10.tgz
+    version: 8.0.10
   prometheus-node-exporter:
   - apiVersion: v2
     appVersion: 1.2.2
-    created: "2021-09-06T15:44:50.233990306Z"
+    created: "2021-09-19T12:57:32.666764591Z"
     description: A Helm chart for prometheus node-exporter
     digest: d4674d89c4eae1e9b3d52931a66875150ea25d3bac320a0fa69b9f1b5c4fc480
     home: https://github.com/prometheus/node_exporter/
@@ -132,7 +153,7 @@ entries:
   seldon-core-analytics:
   - apiVersion: v2
     appVersion: 1.11.1-dev
-    created: "2021-09-06T15:44:50.249957722Z"
+    created: "2021-09-19T12:57:32.686472119Z"
     dependencies:
     - condition: grafana.enabled
       name: grafana
@@ -145,7 +166,7 @@ entries:
     description: 'Prometheus and Grafana installation with a basic Grafana dashboard
       showing the default Prometheus metrics exposed by Seldon for each inference
       graph deployed. '
-    digest: 3ed2fdb2d590f72ae15de03ba8b7535e0f0fbe881afeb311f61e92c67d3e4d67
+    digest: 1071b92ea868ac4b1616c16db93a7c9c18ed82082e51042110f3a83551f956bd
     home: https://github.com/SeldonIO/seldon-core
     keywords:
     - seldon-core
@@ -162,7 +183,7 @@ entries:
     version: 1.11.1-dev
   - apiVersion: v2
     appVersion: 1.11.0-dev
-    created: "2021-09-06T15:44:50.241936514Z"
+    created: "2021-09-19T12:57:32.676073663Z"
     dependencies:
     - condition: grafana.enabled
       name: grafana
@@ -192,9 +213,9 @@ entries:
     version: 1.11.0-dev
   seldon-core-operator:
   - apiVersion: v1
-    created: "2021-09-06T15:44:50.259585853Z"
+    created: "2021-09-19T12:57:32.698321755Z"
     description: Seldon Core CRD and controller helm chart for Kubernetes.
-    digest: 620b3c83d1c365684a8309a3bf616ecfc83edde0755c2207c574d2485c1147ff
+    digest: 7e0ec7c2cfe5be5fdb202cc2d455e1c78a8548b9977b7739f7752d3728be79e0
     keywords:
     - kubernetes
     - machine-learning
@@ -206,4 +227,4 @@ entries:
     urls:
     - https://chritter.github.io/charts/seldon-core-operator-1.10.0.tgz
     version: 1.10.0
-generated: "2021-09-06T15:44:50.208924066Z"
+generated: "2021-09-19T12:57:32.628341223Z"
