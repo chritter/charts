@@ -15,7 +15,10 @@ persistence:
   # dialect+driver://username:password@host:port/database.
   # MLflow supports the dialects mysql, mssql, sqlite, and postgresql.
   # For more details, see SQLAlchemy database uri.
-  backendStoreUri: "sqlite:////mlflow/experiments.db"
+  # backendStoreUri set from postgres secrets, see deployment template
+  # backendStoreUri: "sqlite:////mlflow/experiments.db"
+  # backendStoreUri: "postgresql://postgres:1234@postgresql.minio.svc.cluster.local:5432/postgres" 
+  backendStoreUri: "postgresql://postgres:1234@postgresql:5432/postgres" 
 
 imagePullSecrets: []
 nameOverride: ""
