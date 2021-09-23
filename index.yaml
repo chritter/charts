@@ -3,7 +3,7 @@ entries:
   grafana:
   - apiVersion: v2
     appVersion: 8.1.2
-    created: "2021-09-23T12:41:49.713875136Z"
+    created: "2021-09-23T12:45:54.146341039Z"
     description: The leading tool for querying and visualizing time series and metrics.
     digest: d445a4e2156f4187b7bc714b815da748e550d4ba6aaad9316434069b77829a7d
     home: https://grafana.net
@@ -37,7 +37,7 @@ entries:
       artifacthub.io/operator: "true"
     apiVersion: v2
     appVersion: 0.50.0
-    created: "2021-09-23T12:41:49.744554209Z"
+    created: "2021-09-23T12:45:54.170227172Z"
     dependencies:
     - condition: kubeStateMetrics.enabled
       name: kube-state-metrics
@@ -55,7 +55,7 @@ entries:
       and Prometheus rules combined with documentation and scripts to provide easy
       to operate end-to-end Kubernetes cluster monitoring with Prometheus using the
       Prometheus Operator.
-    digest: d3a0eca50874c415a0fc473d1ad99f426d9c7861fcfcb41824cad8df5716c81f
+    digest: da39b809dda48f38c6636d2c67948d22faaa7ef09187a1d7c8fd999d21e389f3
     home: https://github.com/prometheus-operator/kube-prometheus
     icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
     keywords:
@@ -85,7 +85,7 @@ entries:
   kube-state-metrics:
   - apiVersion: v2
     appVersion: 2.2.0
-    created: "2021-09-23T12:41:49.745681215Z"
+    created: "2021-09-23T12:45:54.171215786Z"
     description: Install kube-state-metrics to generate and expose cluster-level metrics
     digest: 2aca0ce6be89db4e86d3821c0419efd29bd1ceba91c36aa6654f45aee74ebaca
     home: https://github.com/kubernetes/kube-state-metrics/
@@ -109,9 +109,9 @@ entries:
   minio:
   - apiVersion: v1
     appVersion: master
-    created: "2021-09-23T12:41:49.747731327Z"
+    created: "2021-09-23T12:45:54.172881709Z"
     description: High Performance, Kubernetes Native Object Storage
-    digest: c2f2785362651a725abec77a0f410c6d9c17ec0cfa76689e8c654028303a1480
+    digest: ef395d227bbb47f3939156495013f60f254ee4b4805cfe8bc86bf3024b08b4da
     home: https://min.io
     icon: https://min.io/resources/img/logo/MINIO_wordmark.png
     keywords:
@@ -130,9 +130,9 @@ entries:
   mlflow:
   - apiVersion: v2
     appVersion: 1.18.0
-    created: "2021-09-23T12:41:49.74833663Z"
+    created: "2021-09-23T12:45:54.173476217Z"
     description: MLflow - an open source platform for the machine learning lifecycle
-    digest: fc94b3642fb9a26e786a996c18e2034d3b1986323650c699a0fbf61a4733b95d
+    digest: b79758b1315eedafa07c7ffd13d9c386a3ec1b639b71b13af9f93c0c13530e4e
     maintainers:
     - email: mlops@getindata.com
       name: getindata
@@ -142,10 +142,44 @@ entries:
     urls:
     - https://chritter.github.io/charts/mlflow-0.1.1.tgz
     version: 0.1.1
+  postgresql:
+  - annotations:
+      category: Database
+    apiVersion: v2
+    appVersion: 11.13.0
+    created: "2021-09-23T12:45:54.177464673Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    description: Chart for PostgreSQL, an object-relational database management system
+      (ORDBMS) with an emphasis on extensibility and on standards-compliance.
+    digest: f627d44d34081e03d5fb466dc3a65b6cb5384003e1e4d8b54e1ebd280f3935f5
+    home: https://github.com/bitnami/charts/tree/master/bitnami/postgresql
+    icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-220x234.png
+    keywords:
+    - postgresql
+    - postgres
+    - database
+    - sql
+    - replication
+    - cluster
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    name: postgresql
+    sources:
+    - https://github.com/bitnami/bitnami-docker-postgresql
+    - https://www.postgresql.org/
+    urls:
+    - https://chritter.github.io/charts/postgresql-10.10.1.tgz
+    version: 10.10.1
   prometheus-node-exporter:
   - apiVersion: v2
     appVersion: 1.2.2
-    created: "2021-09-23T12:41:49.749339536Z"
+    created: "2021-09-23T12:45:54.178308584Z"
     description: A Helm chart for prometheus node-exporter
     digest: d4674d89c4eae1e9b3d52931a66875150ea25d3bac320a0fa69b9f1b5c4fc480
     home: https://github.com/prometheus/node_exporter/
@@ -168,7 +202,7 @@ entries:
   seldon-core-analytics:
   - apiVersion: v2
     appVersion: 1.11.1-dev
-    created: "2021-09-23T12:41:49.774343177Z"
+    created: "2021-09-23T12:45:54.198930571Z"
     dependencies:
     - condition: grafana.enabled
       name: grafana
@@ -181,7 +215,7 @@ entries:
     description: 'Prometheus and Grafana installation with a basic Grafana dashboard
       showing the default Prometheus metrics exposed by Seldon for each inference
       graph deployed. '
-    digest: 41a3e9f4a9fb09499d89ad201f0cc31316cb75e66a8bd2749582d4c57301ceb3
+    digest: aa54e7e311c7ed02d46b0ca32a3e71078737d60295ac06f525ad866d9c63f664
     home: https://github.com/SeldonIO/seldon-core
     keywords:
     - seldon-core
@@ -198,7 +232,7 @@ entries:
     version: 1.11.1-dev
   - apiVersion: v2
     appVersion: 1.11.0-dev
-    created: "2021-09-23T12:41:49.7607895Z"
+    created: "2021-09-23T12:45:54.189262137Z"
     dependencies:
     - condition: grafana.enabled
       name: grafana
@@ -228,9 +262,9 @@ entries:
     version: 1.11.0-dev
   seldon-core-operator:
   - apiVersion: v1
-    created: "2021-09-23T12:41:49.784569734Z"
+    created: "2021-09-23T12:45:54.208502704Z"
     description: Seldon Core CRD and controller helm chart for Kubernetes.
-    digest: e6df32e18b4ff294a0c0dcfe35b2cfe441275a91f3280cebfdc44e70e6153fdf
+    digest: 27a63ac0ea012081bcec742beb545ed455720c3e46925b53659156e46ad0adec
     keywords:
     - kubernetes
     - machine-learning
@@ -242,4 +276,4 @@ entries:
     urls:
     - https://chritter.github.io/charts/seldon-core-operator-1.10.0.tgz
     version: 1.10.0
-generated: "2021-09-23T12:41:49.710488817Z"
+generated: "2021-09-23T12:45:54.143584701Z"
