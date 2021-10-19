@@ -3,9 +3,9 @@ entries:
   elasticsearch:
   - apiVersion: v1
     appVersion: 7.13.0
-    created: "2021-10-19T21:23:05.562000756Z"
+    created: "2021-10-19T21:31:23.968406467Z"
     description: Official Elastic helm chart for Elasticsearch
-    digest: 0763da039a5b9f3bfff377df00514509ee6c67078b2d05b3a6633d5f2015e7eb
+    digest: 39aa9e1570a1adf5cc3f071cc838c2860c90a0e68dec5b5ebaf320d6c102b7e2
     home: https://github.com/elastic/helm-charts
     icon: https://helm.elastic.co/icons/elasticsearch.png
     maintainers:
@@ -20,9 +20,9 @@ entries:
   fluentd:
   - apiVersion: v1
     appVersion: 1.0.0
-    created: "2021-10-19T21:23:05.56224276Z"
+    created: "2021-10-19T21:31:23.969041076Z"
     description: helm chart fix
-    digest: fd9b2014180a6ff428f28b04f67ab822dd087e6c9d4af9f56ec9c1e3098a0c30
+    digest: 360000bc0da1f42b2a3e8f1e9ebf2020f30519c2fa047f61842ed03b011d82de
     name: fluentd
     urls:
     - https://chritter.github.io/charts/fluentd-1.0.0.tgz
@@ -30,7 +30,7 @@ entries:
   grafana:
   - apiVersion: v2
     appVersion: 8.1.2
-    created: "2021-10-19T21:23:05.566298837Z"
+    created: "2021-10-19T21:31:23.973218429Z"
     description: The leading tool for querying and visualizing time series and metrics.
     digest: d445a4e2156f4187b7bc714b815da748e550d4ba6aaad9316434069b77829a7d
     home: https://grafana.net
@@ -57,9 +57,9 @@ entries:
   kibana:
   - apiVersion: v1
     appVersion: 7.13.0
-    created: "2021-10-19T21:23:05.567395657Z"
+    created: "2021-10-19T21:31:23.974402944Z"
     description: Official Elastic helm chart for Kibana
-    digest: 8db629c956cfab2b905d5e6199b902f5000dabf40db9de2875a65a1034e4faf6
+    digest: 97a320a265af5b7acada6ebb482f39230580340ef36ef73d161b7793581b00aa
     home: https://github.com/elastic/helm-charts
     icon: https://helm.elastic.co/icons/kibana.png
     maintainers:
@@ -81,7 +81,7 @@ entries:
       artifacthub.io/operator: "true"
     apiVersion: v2
     appVersion: 0.50.0
-    created: "2021-10-19T21:23:05.590398991Z"
+    created: "2021-10-19T21:31:24.000936682Z"
     dependencies:
     - condition: kubeStateMetrics.enabled
       name: kube-state-metrics
@@ -99,7 +99,7 @@ entries:
       and Prometheus rules combined with documentation and scripts to provide easy
       to operate end-to-end Kubernetes cluster monitoring with Prometheus using the
       Prometheus Operator.
-    digest: 6c62bcbaf54662b98ae919519b3ed9e45316f58deebbce1f5d281b6a6b6a4438
+    digest: cc40a95a000aea106f2be8437ecd39f1e61941fe9c9b30cb41e27468cac5bc8a
     home: https://github.com/prometheus-operator/kube-prometheus
     icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
     keywords:
@@ -129,7 +129,7 @@ entries:
   kube-state-metrics:
   - apiVersion: v2
     appVersion: 2.2.0
-    created: "2021-10-19T21:23:05.591208106Z"
+    created: "2021-10-19T21:31:24.001949695Z"
     description: Install kube-state-metrics to generate and expose cluster-level metrics
     digest: 2aca0ce6be89db4e86d3821c0419efd29bd1ceba91c36aa6654f45aee74ebaca
     home: https://github.com/kubernetes/kube-state-metrics/
@@ -153,9 +153,9 @@ entries:
   minio:
   - apiVersion: v1
     appVersion: master
-    created: "2021-10-19T21:23:05.592750835Z"
+    created: "2021-10-19T21:31:24.004164823Z"
     description: High Performance, Kubernetes Native Object Storage
-    digest: 7cef64ebab433a14968459e57b6185eefd92bb2d825863be61a9fb9bab3efd43
+    digest: 8b7affb20b7a72fbe8182d5157921a5fd65757a99328f86070f1160299bba5a7
     home: https://min.io
     icon: https://min.io/resources/img/logo/MINIO_wordmark.png
     keywords:
@@ -174,9 +174,9 @@ entries:
   mlflow:
   - apiVersion: v2
     appVersion: 1.18.0
-    created: "2021-10-19T21:23:05.593296045Z"
+    created: "2021-10-19T21:31:24.005308137Z"
     description: MLflow - an open source platform for the machine learning lifecycle
-    digest: a103cda9c06f7c69215e7fa413c575c3d8da5db936e7147df136e86d013c6532
+    digest: 4058b950eb3d38671f89ba27844f243431eb1f957bd938cb178d6270a46eae0c
     maintainers:
     - email: mlops@getindata.com
       name: getindata
@@ -191,14 +191,14 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 11.13.0
-    created: "2021-10-19T21:23:05.596756111Z"
+    created: "2021-10-19T21:31:24.010355502Z"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
       version: 1.x.x
     description: Chart for PostgreSQL, an object-relational database management system
       (ORDBMS) with an emphasis on extensibility and on standards-compliance.
-    digest: 058be4c38c5465da7d69144ec0aa26394cdef42262c817780aab1e866a638e83
+    digest: 7b8fa630f8fa7670e364c4c443153c64f1eb510dbe5beb094dac201afe12c2fe
     home: https://github.com/bitnami/charts/tree/master/bitnami/postgresql
     icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-220x234.png
     keywords:
@@ -223,7 +223,7 @@ entries:
   prometheus-node-exporter:
   - apiVersion: v2
     appVersion: 1.2.2
-    created: "2021-10-19T21:23:05.597457624Z"
+    created: "2021-10-19T21:31:24.011107111Z"
     description: A Helm chart for prometheus node-exporter
     digest: d4674d89c4eae1e9b3d52931a66875150ea25d3bac320a0fa69b9f1b5c4fc480
     home: https://github.com/prometheus/node_exporter/
@@ -246,7 +246,7 @@ entries:
   seldon-core-analytics:
   - apiVersion: v2
     appVersion: 1.11.1-dev
-    created: "2021-10-19T21:23:05.614910853Z"
+    created: "2021-10-19T21:31:24.031207167Z"
     dependencies:
     - condition: grafana.enabled
       name: grafana
@@ -259,7 +259,7 @@ entries:
     description: 'Prometheus and Grafana installation with a basic Grafana dashboard
       showing the default Prometheus metrics exposed by Seldon for each inference
       graph deployed. '
-    digest: da925220250bdb14904df0bea4bd91107f6b23c3f82d7c548e141d56d291cfcb
+    digest: 433195517753763ae8e442357b41726feb4b0b120588b738663074879c5e7d06
     home: https://github.com/SeldonIO/seldon-core
     keywords:
     - seldon-core
@@ -276,7 +276,7 @@ entries:
     version: 1.11.1-dev
   - apiVersion: v2
     appVersion: 1.11.0-dev
-    created: "2021-10-19T21:23:05.604875764Z"
+    created: "2021-10-19T21:31:24.020583632Z"
     dependencies:
     - condition: grafana.enabled
       name: grafana
@@ -306,9 +306,9 @@ entries:
     version: 1.11.0-dev
   seldon-core-operator:
   - apiVersion: v1
-    created: "2021-10-19T21:23:05.624619136Z"
+    created: "2021-10-19T21:31:24.041935104Z"
     description: Seldon Core CRD and controller helm chart for Kubernetes.
-    digest: 31c3d98f3409fdc4fe33328e604ca589c2c4f8b07a00e34db190eb68ea58ebc8
+    digest: 9725c7143d236bcebe77c9439517ba5973ae4cfcf36b68b4ea518f14a2a6197d
     keywords:
     - kubernetes
     - machine-learning
@@ -320,4 +320,4 @@ entries:
     urls:
     - https://chritter.github.io/charts/seldon-core-operator-1.10.0.tgz
     version: 1.10.0
-generated: "2021-10-19T21:23:05.559649511Z"
+generated: "2021-10-19T21:31:23.965027624Z"
